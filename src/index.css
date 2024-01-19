@@ -79,7 +79,9 @@ header{
   background-color: #27254c;
   color: #f7c83b;
   font-family: 'DM Serif Display', serif;
+  position: relative;
 }
+
 
 header h1{
   font-size: 2.5rem;
@@ -103,6 +105,7 @@ main{
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  position: relative;
 }
 
 article{
@@ -110,15 +113,24 @@ article{
   border-bottom: 1px solid rgba(0, 0, 0, 0.284);
 }
 
-article button{
+article .delete-btn,
+article .update-btn{
   font-family: inherit;
   text-transform: uppercase;
   margin-top: 1rem;
   padding: .6rem 1rem;
-  background-color: #890815;
   color: white;
   border: none;
   cursor: pointer;
+}
+
+article .delete-btn{
+  background-color: #890815;
+}
+
+article .update-btn{
+  background-color: #564a94;
+  margin-left: .5rem;
 }
 
 article button:hover{
@@ -128,6 +140,8 @@ article button:hover{
 article button:active{
   opacity: .8;
 }
+
+
 
 .postTitle{
   font-size: 1.8rem;
@@ -178,15 +192,29 @@ main label:first-child{
   margin-bottom: 2rem;
 }
 
-.newpost-form button{
+.newpost-form .submit-post-btn,
+.newpost-form .update-post-btn{
   margin-top: 1rem;
   padding: .7rem;
-  background-color: #564a94;
-  color: #f7c83b;
   font-family: inherit;
   font-size: 1.2rem;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
+}
+
+.newpost-form .update-post-btn{
+  background-color: #f7c83b;
+  color: #564a94;
+}
+
+.newpost-form .submit-post-btn{
+  background-color: #564a94;
+  color: #f7c83b;
+}
+
+.newpost-form .update-post-btn{
+  margin-bottom: 1rem;
 }
 
 .about-page{
@@ -199,3 +227,23 @@ main label:first-child{
   justify-content: center;
 }
 
+
+
+.no-post-text,
+.post-not-found-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.header-device-icon{
+  position: absolute;
+  font-size: 2rem;
+  right: 5%;
+}
+
+.loading-page{
+  align-items: center;
+  justify-content: center;
+}

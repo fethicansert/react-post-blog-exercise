@@ -5,7 +5,7 @@ function ErrorPage({errMessage}) {
   return (
     <main className='error-page'>
         <MdErrorOutline color='red' className='error-icon' size={100}/>
-        <p style={{'color':' red','textAlign':'center'}}>{errMessage}</p>
+        <p style={{'color':' red','textAlign':'center','marginTop':'1rem'}}>{errMessage}</p>
     </main>
   )
 }

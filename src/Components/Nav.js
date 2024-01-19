@@ -1,7 +1,9 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-
-function Nav({ search, setSearch }) {
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import DataContext from '../Context/DataContext';
+function Nav() {
+  const { search, setSearch} = useContext(DataContext);
   return (
     <div className='nav-container'>
      <div className='nav-wrapper'>

@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-
-function PostPage({posts, handleDelete}) {
+import DataContext from '../Context/DataContext';
+function PostPage() {
+  const { posts, handleDelete } = useContext(DataContext);
   const { id } = useParams();
   const currentPost = posts.find(post=> post.id.toString() === id);
   const navigate = useNavigate();
-
+  
   return (
     <main>
       <article>
@@ -14,7 +15,8 @@ function PostPage({posts, handleDelete}) {
             <h1 className='postTitle'>{currentPost.title}</h1>
             <p className='postDate'>{currentPost.datetime}</p>
             <p className='postBody'>{currentPost.body}</p>
-            <button onClick={() => handleDelete(currentPost.id)}>Delete</button>
+            <button className='delete-btn' onClick={() => handleDelete(currentPost.id)}>Delete</button>
+            <Link to={`/update/${currentPost.id}`}><button className='update-btn'>Edit</button></Link>
           </>
         ) : (
           <>

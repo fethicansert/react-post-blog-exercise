@@ -4,7 +4,7 @@ function Feed({ posts, handleDelete }) {
   return (
     <>
       {posts.map(post => (
-        <Post key={ post.id } post={ post } handleDelete={ handleDelete }></Post>
+        <Post key={ post.id } post={ post } ></Post>
       ))}
     </>
   )

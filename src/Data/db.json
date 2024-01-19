@@ -1,22 +1,10 @@
 {
   "posts": [
     {
-      "id": "2c248e8e-1268-43da-b0ee-b6885386412f",
-      "title": "z",
-      "datetime": "January 14, 2024 8:58:23 PM",
-      "body": "z"
-    },
-    {
-      "id": "e77d82cc-0ef8-4019-8b92-5baa54c608ac",
-      "title": "Hello",
-      "datetime": "January 14, 2024 8:59:09 PM",
-      "body": "World"
-    },
-    {
-      "id": "3d597cb7-1b1a-428c-b038-097a0768d61c",
-      "title": "asda",
-      "datetime": "January 14, 2024 9:00:18 PM",
-      "body": "dasdas"
+      "id": "7f9ea572-b92e-41b7-8cbb-133a2f099383",
+      "title": "What is C++?",
+      "datetime": "January 19, 2024 1:36:03 PM",
+      "body": "C++ is an object-oriented programming (OOP) language that is viewed by many as the best language for creating large-scale applications. C++ is a superset of the C language.\n\nA related programming language, Java, is based on C++ but optimized for the distribution of program objects in a network such as the internet. Java is somewhat simpler and easier to learn than C++ and has characteristics that give it other advantages over C++. However, both languages require a considerable amount of study."
     }
   ]
 }
